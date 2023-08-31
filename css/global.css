@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  --mnws-red: #ff5757;
+  --mnws-blue: #38b6ff;
+  --mnws-green: #7ed957;
+  --mnws-purple: #8c52ff;
+  --mnws-pink: #ff66c4;
+  --mnws-gray: #d9d9d9;
+  --mnws-dark: #24292f;
+  --mnws-white: #eee;
+}
+
+* {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 30px;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  overflow: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.transition {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.animated {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.eye {
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  border-color: none !important;
+  background-color: var(--mnws-purple) !important;
+}
+
+.bg-mnws-red {
+  background-color: var(--mnws-red) !important;
+}
+
+.bg-mnws-blue {
+  background-color: var(--mnws-blue) !important;
+}
+
+.bg-mnws-green {
+  background-color: var(--mnws-green) !important;
+}
+
+.bg-mnws-purple {
+  background-color: var(--mnws-purple) !important;
+}
+
+.bg-mnws-pink {
+  background-color: var(--mnws-pink) !important;
+}
+
+.bg-mnws-gray {
+  background-color: var(--mnws-gray) !important;
+}
+
+.bg-mnws-black {
+  background-color: black !important;
+}
+
+.bg-mnws-white {
+  background-color: var(--mnws-white) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--mnws-dark);
+    color: var(--mnws-white);
+  }
+
+  .eye {
+    background-color: var(--mnws-white);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: var(--mnws-white);
+    color: var(--mnws-dark);
+  }
+
+  .eye {
+    background-color: var(--mnws-dark);
+  }
+
+}
