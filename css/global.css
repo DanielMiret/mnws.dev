@@ -114,10 +114,9 @@ section {
   .eye {
     background-color: var(--mnws-dark);
   }
-
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (min-width: 768px){
   .logo{
     max-width: 840px;
   }
