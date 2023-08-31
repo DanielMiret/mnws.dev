@@ -10,10 +10,10 @@ services:
       - proxy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.web.rule=Host(`mnws.dev`)"
-      - "traefik.http.routers.web.entrypoints=websecure"
-      - "traefik.http.routers.web.tls.certresolver=myresolver"
-      - "traefik.http.routers.web.tls=true"
+      - "traefik.http.routers.mnws.rule=Host(`mnws.dev`)"
+      - "traefik.http.routers.mnws.entrypoints=websecure"
+      - "traefik.http.routers.mnws.tls.certresolver=myresolver"
+      - "traefik.http.routers.mnws.tls=true"
 
 networks:
   proxy:
